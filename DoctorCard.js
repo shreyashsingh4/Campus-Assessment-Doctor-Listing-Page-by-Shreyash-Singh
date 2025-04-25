@@ -1,5 +1,4 @@
 import React from "react";
-
 function DoctorCard({ doctor }) {
   return (
     <div className="doctor-card" data-testid="doctor-card">
@@ -22,5 +21,4 @@ function DoctorCard({ doctor }) {
     </div>
   );
 }
-
 export default DoctorCard;
