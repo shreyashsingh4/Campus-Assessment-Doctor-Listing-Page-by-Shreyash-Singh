@@ -1,0 +1,78 @@
+/* src/components/styles.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+  }
+  
+  .container {
+    padding: 10px;
+  }
+  
+  .search-container {
+    margin-bottom: 10px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .suggestions {
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+    max-width: 100%;
+  }
+  
+  .suggestions li {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .main {
+    display: flex;
+  }
+  
+  .filters {
+    width: 250px;
+    padding-right: 10px;
+  }
+  
+  .filters label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .doctor-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .doctor-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .doctor-info {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .doctor-photo img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .doctor-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
