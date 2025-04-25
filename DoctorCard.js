@@ -1,4 +1,3 @@
-// src/components/DoctorCard.js
 import React from "react";
 
 function DoctorCard({ doctor }) {
