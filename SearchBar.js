@@ -1,15 +1,11 @@
-// src/components/SearchBar.js
 import React, { useState } from "react";
-
 function SearchBar({ doctors, onSearch }) {
   const [input, setInput] = useState("");
   const [suggestions, setSuggestions] = useState([]);
-
   const handleChange = (e) => {
     const val = e.target.value;
     setInput(val);
     onSearch(val);
-
     if (val.length > 0) {
       const filtered = doctors
         .filter((doc) => doc.name.toLowerCase().includes(val.toLowerCase()))
@@ -19,13 +15,11 @@ function SearchBar({ doctors, onSearch }) {
       setSuggestions([]);
     }
   };
-
   const handleSelect = (name) => {
     setInput(name);
     onSearch(name);
     setSuggestions([]);
   };
-
   return (
     <div className="search-container">
       <input
@@ -52,5 +46,4 @@ function SearchBar({ doctors, onSearch }) {
     </div>
   );
 }
-
 export default SearchBar;
